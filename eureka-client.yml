@@ -1,0 +1,19 @@
+eureka:
+  client:
+  host: 'eureka.sdcsoft.com.cn'
+  port: 80
+  servicePath: '/eureka/apps/'
+instance:
+  instanceId: 'reportdata'
+  app: 'DC'
+  hostName: '192.168.0.124'
+  ipAddr: '127.0.0.1'
+  statusPageUrl: 'http://192.168.0.124:3000/info'
+  port:
+      '$': 3000
+      '@enabled': 'true'
+
+  vipAddress: 'DC'
+  dataCenterInfo:
+      '@class': 'com.netflix.appinfo.InstanceInfo$DefaultDataCenterInfo'
+      name: 'MyOwn'
